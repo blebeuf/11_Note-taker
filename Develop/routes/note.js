@@ -34,4 +34,22 @@ notesRouter.post('/', (req, res) => {
   }
 });
 
+// notes on this piece https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+notesRouter.delete('/:id', (req,res) => {
+    const noteId = req.params.ids;
+
+    readFromFile('./db/notes.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+    // Filter out the note with the id to delete
+    const filteredNotes = json.filter((note) => note.id !== noteId);
+
+    writeFromFile('./db/notes.json', filteredNotes);
+
+    res.json(`Note with an id %{noteId} has been deleted.`);
+    
+    })
+    .catch((error) => res.status(500).json('Error in deleting note: ' + error));
+});
+
 module.exports = notesRouter;
