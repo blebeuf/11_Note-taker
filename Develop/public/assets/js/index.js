@@ -1,3 +1,4 @@
+// starter code
 let noteForm;
 let noteTitle;
 let noteText;
