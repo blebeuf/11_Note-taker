@@ -1,16 +1,12 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
+        "title": "Granny needs milk",
+        "text": "go to the market please and grab milk!!",
+        "id": "b2991ca8-9c25-49ed-9293-40b49ff60652"
     },
     {
-        "title": "dog dog dog",
-        "text": "We need to eat dog\n",
-        "id": "3a6fa8ea-9cb5-4eb7-a5cb-195651e3565e"
-    },
-    {
-        "title": "pizza",
-        "text": "I need pizza",
-        "id": "e348fbd5-4995-4e84-9c93-3643c55f8ff5"
+        "title": "Mama needs shrimps",
+        "text": "she needs more than one shrimp!\n",
+        "id": "f23c7dc6-5025-4624-91cf-3b60d8b7470c"
     }
 ]
